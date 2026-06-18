@@ -1,16 +1,75 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/static/Roboto-Light.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../fonts/static/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+
+}
+
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    
+}
+
+@media screen and (max-width: 768px) {
+    header .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .hero-content {
+        text-align: center;
+    }
+
+    #call-to-action {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 header { 
+    margin: 60px auto 60px;
     background-color: #1F2937;
-    padding: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 header .header-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 88%;
+    margin: 10px auto;
     align-items: center;
+    
+}
+
+header nav {
+    color: #E5E7EB;
+    text-decoration: none;
+    margin: 0;
+    display: flex;
+    font-size: 18px;
 }
 
 header .hero {
@@ -22,18 +81,34 @@ header .hero {
 header .hero-content {
     max-width: 600px;
     text-align: left;
+    
 }
 
-header .hero-image {
-    max-width: 600px;
+header .hero-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Roboto
+}
+
+.hero-image {
+    width: 300px;
     height: auto;
-
+    
 }
 
-header h1 {
+header .hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+   
+}
+
+.hero-content h1 {
     color: #F9FAFB;
+    font-family: Roboto-Bold;
     font-size: 48px;
-    font-weight: 800;
+    font-weight:800;
     margin: 0;
 }
 
@@ -43,31 +118,41 @@ header p, header nav {
     margin: 0;
 }
 
-header img {
-    width: 100px;
-    height: auto;
+.logo img {
+    width: 70px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
 }
 footer {
     background-color: #1F2937;
     color: #E5E7EB;
+    align-items: center;
     text-align: center;
     padding: 20px;
     bottom: 0;
     width: 100%;
 }
 
+footer p {
+    margin: 0;
+    font-family: Roboto-Bold;
+}
+
 header button{
     background-color: #3882F6;
     color: #F9FAFB;
+    font-weight: 700;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 8px 16px;
     font-size: 16px;
     cursor: pointer;
+    width: 120px;
 }
 
 header button:hover {
-    background-color: #1F2937;
+    background-color: #2a6bc0;
 }
 
 header nav ul {
@@ -81,28 +166,53 @@ header nav ul li {
     margin-right: 10px;
 }
 
+header nav a {
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
 #quotes {
     background-color: #E5E7EB;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 #quotes h2 {
     color: #1F2937;
     font-size: 36px;
-    font-weight: 700;
+    font-family: Roboto-Bold;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
 #quotes blockquote {
+   text-align: center;
+   margin: 50px auto;
+}
+
+#quotes p {
     color: #1F2937;
     font-size: 36px;
     font-style: light italic;
-    margin: 0;
+    margin: 20px auto;
+    max-width: 70%;
+    text-align: center;
 }
+
+#quotes cite {
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: 800;
+    font-style: normal;
+    display: block;
+    font-family: Roboto-Bold;
+    text-align: center;
+    margin-left: 600px;
+}   
 
 #call-to-action {
     display: flex;
+    margin: 60px auto 60px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -113,11 +223,16 @@ header nav ul li {
     
 }
 
+.cta-content {
+    text-align: left;
+}
+
 #call-to-action h4 {
     color: #F9FAFB;
+    font-family: Roboto-Bold;
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 #call-to-action p {
@@ -129,10 +244,62 @@ header nav ul li {
 #call-to-action button {
     background-color: #3882F6;
     color: #F9FAFB;
-    border: 80%;
+    border: 2px solid #F9FAFB;
     border-radius: 8px;
     border-color: #F9FAFB;
     padding: 8px 16px;
     font-size: 16px;
     cursor: pointer;
+    width: 120px;
+
+}
+
+#call-to-action button:hover {
+    background-color: #2a6bc0;
+}
+
+#courses {
+    margin: 60px auto 60px;
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.course-card {
+    margin: 0;
+}
+
+#courses h2 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#courses img {
+    max-width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#courses figcaption {
+    color: #1F2937;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0;
+    font-weight: 700;
 }
