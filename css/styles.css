@@ -308,6 +308,11 @@ header nav a {
     cursor: pointer;
 }
 
+.course-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .course-card figure {
     margin: 0 0 12px;
 }
