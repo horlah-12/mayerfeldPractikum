@@ -234,6 +234,7 @@ footer p {
 
 #quotes blockquote {
    text-align: center;
+   font-style: italic;
    margin: 50px auto;
 }
 
@@ -614,8 +615,108 @@ footer p {
     background-color: #111827;
 }
 
+#sign-up-section {
+    background-color: #F9FAFB;
+    margin: 60px auto;
+    padding: 30px;
+}
+
+.sign-up-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sign-up-info,
+.sign-up-form {
+    flex: 1;
+}
+
+.sign-up-info h2 {
+    color: #1F2937;
+    font-family: Roboto-Bold;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.sign-up-info p {
+    color: #374151;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.sign-up-detail {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 18px;
+}
+
+.sign-up-detail h3 {
+    color: #111827;
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.sign-up-detail p {
+    color: #4b5563;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.sign-up-form {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+    padding: 24px;
+}
+
+.sign-up-form label {
+    color: #1F2937;
+    display: block;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.sign-up-form input,
+.sign-up-form select {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    color: #1F2937;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding: 12px;
+    width: 100%;
+}
+
+.sign-up-form button {
+    background-color: #1F2937;
+    border: none;
+    border-radius: 8px;
+    color: #F9FAFB;
+    cursor: pointer;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    padding: 12px 18px;
+}
+
+.sign-up-form button:hover {
+    background-color: #111827;
+}
+
 @media (max-width: 900px) {
-    .contact-content {
+    .contact-content,
+    .sign-up-content {
         flex-direction: column;
     }
 }
@@ -630,7 +731,8 @@ footer p {
     #hero,
     #call-to-action,
     .about-story-content,
-    .contact-content {
+    .contact-content,
+    .sign-up-content {
         flex-direction: column;
         align-items: center;
     }

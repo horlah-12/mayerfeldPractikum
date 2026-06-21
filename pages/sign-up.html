@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crew of Code | Sign Up</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <a href="../index.html" class="logo">
+            <img src="../logo/logo.png" alt="Crew of Code Logo" />
+            <span>Crew of Code</span>
+          </a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label
+          for="nav-toggle"
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero contact-hero">
+        <div class="hero-content-others">
+          <h1>Join Crew of Code</h1>
+          <a href="../index.html">
+            <button id="back-home">← Back to Home</button>
+          </a>
+          <p>
+            Create your account to access our courses, track your progress, and
+            start building real coding skills with a supportive learning
+            community.
+          </p>
+        </div>
+      </section>
+
+      <section id="sign-up-section">
+        <div class="sign-up-content">
+          <div class="sign-up-info">
+            <h2>Why Sign Up?</h2>
+            <p>
+              Joining Crew of Code gives you access to structured learning paths,
+              hands-on projects, and guidance from instructors who care about
+              your progress.
+            </p>
+
+            <div class="sign-up-detail">
+              <h3>Access All Courses</h3>
+              <p>
+                Browse HTML, JavaScript, Python, SQL, and more from one account.
+              </p>
+            </div>
+            <div class="sign-up-detail">
+              <h3>Track Your Progress</h3>
+              <p>
+                Follow your learning journey and build confidence with every
+                completed lesson.
+              </p>
+            </div>
+            <div class="sign-up-detail">
+              <h3>Community Support</h3>
+              <p>
+                Connect with fellow learners and get help when you need it.
+              </p>
+            </div>
+          </div>
+
+          <form class="sign-up-form">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              required
+            />
+
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirm your password"
+              required
+            />
+
+            <label for="course-interest">Course of Interest</label>
+            <select id="course-interest" name="course-interest" required>
+              <option value="">Select a course</option>
+              <option value="html-css">HTML and CSS</option>
+              <option value="javascript-react">JavaScript & React</option>
+              <option value="python-django">Python & Django</option>
+              <option value="sql-databases">SQL and Databases</option>
+            </select>
+
+            <button type="submit">Create account</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="call-to-action">
+        <div class="cta-content">
+          <h4>Already have questions?</h4>
+          <p>
+            Reach out to our team and we will help you choose the right learning
+            path.
+          </p>
+        </div>
+        <a href="contact-us.html">
+          <button>Contact us</button>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Crew of Code. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
